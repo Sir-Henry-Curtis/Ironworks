@@ -1,0 +1,25 @@
+{% extends "house.html" %}
+
+{% block content2 %}
+                    <div id="sub-nav">
+                      <ul>
+                        {% for house in houses %}
+                            {% if loop.last %}
+                                <li class="last"><a href="{{house.href}}">{{house.title}}</a></li>
+                            {% else %}
+                                <li><a href="{{house.href}}" class="active">{{house.title}}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!--==============================content================================-->
+            <div id="main">
+                <div class="shell">
+                  <div id="content">
+
+                  </div>
+{% endblock %}
