@@ -95,10 +95,10 @@ class Prefs:
                 {"name": "name", "type": "text"},
                 {"name": "value", "type": "text"}])
 
-            self.checkDesktopDefaults("dbName", "desktop")
-            self.checkDesktopDefaults("host", "192.168.1.6")
-            self.checkDesktopDefaults("user", "desktop")
-            self.checkDesktopDefaults("password", "aic9i1tdpw")
+            self.checkDesktopDefaults("dbName", "")
+            self.checkDesktopDefaults("host", "")
+            self.checkDesktopDefaults("user", "")
+            self.checkDesktopDefaults("password", "")
 
             self.checkXbmcDefaults("label", "XBMC server 1")
             self.checkXbmcDefaults("position", "1")
