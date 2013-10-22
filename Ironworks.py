@@ -34,10 +34,10 @@ def checkDbKey():
     try:
         dbPassword = keyring.get_password("Ironworks-MySQL-" + userName, userName)
         if dbPassword is None:
-            password = '8IYdYXdtLb4gZoH3'
+            password = ''
             keyring.set_password("Ironworks-MySQL-" + userName, userName, password)
             app.logger.debug('entry added to keyring')
-        elif dbPassword == '8IYdYXdtLb4gZoH3':
+        elif dbPassword == '':
             app.logger.debug('password saved')
         else:
             app.logger.debug('unknown password')
@@ -58,7 +58,7 @@ sys.path.insert(0, os.path.join(rundir, 'lib'))
 
 # Create Flask instance
 app = Flask(__name__)
-app.secret_key = '\xc8/x\xa4\x9f\xfaQw\xe5\xfe\xdd:\x0eq\xdai_\n\xedZ\x02\xf5\xbb\xb9'
+app.secret_key = 'your secret key goes here'
 
 # If frozen, we need define static and template paths
 if check_frozen():
