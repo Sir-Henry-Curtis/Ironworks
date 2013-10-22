@@ -110,9 +110,9 @@ def index():
 
 @app.route('/process_login', methods=['GET', 'POST'])
 def process_login():
-    userName = 'sec_user'
+    userName = ''
     dbPassword = keyring.get_password("Ironworks-MySQL-" + userName, userName)
-    db = MySQLdb.connect(host="192.168.1.6", user=userName, passwd=dbPassword, db="secure_login")
+    db = MySQLdb.connect(host="", user=userName, passwd=dbPassword, db="")
     if request.method == 'POST':
         user = request.form['email']
         password = hashlib.sha512(request.form['p']).hexdigest()
