@@ -9,9 +9,11 @@
 It is released under the MIT License, [which can be found here](https://github.com/mrkipling/maraschino/blob/master/LICENSE).
 
 ##Website
-(https://github.com/mrkipling/maraschino)
+[Github](https://github.com/mrkipling/maraschino)
+[Project](http://www.maraschinoproject.com/)
 
 #Bleextop
 
 ##Website
-(https://github.com/crysfel/Bleextop)
+[Github](https://github.com/crysfel/Bleextop)
+[demo](http://demos.bleext.com/desktop/)
